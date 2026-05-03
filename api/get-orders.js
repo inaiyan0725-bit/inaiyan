@@ -1,7 +1,8 @@
 export default async function handler(req, res) {
   // Allow only POST
 export default function handler(req, res) {
-  res.status(200).json({ message: "API working 🚀" });
+  return res.send("OK");
+}
 }
 
   const { phone } = req.body;
